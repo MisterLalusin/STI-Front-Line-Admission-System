@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45289F18-63C8-469E-BB25-F473602976A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>STI_Front_Line</RootNamespace>
+    <AssemblyName>STI Front Line</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MigraDoc.DocumentObjectModel-WPF">
+      <HintPath>..\..\..\Tools\References\PDFsharp-MigraDocFoundation-Assemblies-1_32\WPF\MigraDoc.DocumentObjectModel-WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering-WPF">
+      <HintPath>..\..\..\Tools\References\PDFsharp-MigraDocFoundation-Assemblies-1_32\WPF\MigraDoc.Rendering-WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering-WPF">
+      <HintPath>..\..\..\Tools\References\PDFsharp-MigraDocFoundation-Assemblies-1_32\WPF\MigraDoc.RtfRendering-WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="PdfSharp-WPF">
+      <HintPath>..\..\..\Tools\References\PDFsharp-MigraDocFoundation-Assemblies-1_32\WPF\PdfSharp-WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting-WPF">
+      <HintPath>..\..\..\Tools\References\PDFsharp-MigraDocFoundation-Assemblies-1_32\WPF\PdfSharp.Charting-WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AccountDialog.xaml.cs">
+      <DependentUpon>AccountDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddAccountDialog.xaml.cs">
+      <DependentUpon>AddAccountDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeUserLevelDialog.xaml.cs">
+      <DependentUpon>ChangeUserLevelDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HostConfigurationDialog.xaml.cs">
+      <DependentUpon>HostConfigurationDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogConfigurationDialog.xaml.cs">
+      <DependentUpon>LogConfigurationDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OfficersDialog.xaml.cs">
+      <DependentUpon>OfficersDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OfficersProfileDialog.xaml.cs">
+      <DependentUpon>OfficersProfileDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationFormPage.xaml.cs">
+      <DependentUpon>RegistrationFormPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ResetDatabaseDialog.xaml.cs">
+      <DependentUpon>ResetDatabaseDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ResetOfficerPasswordDialog.xaml.cs">
+      <DependentUpon>ResetOfficerPasswordDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolYearDialog.xaml.cs">
+      <DependentUpon>SchoolYearDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ServerConfigurationDialog.xaml.cs">
+      <DependentUpon>ServerConfigurationDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDirectoryDialog.xaml.cs">
+      <DependentUpon>StudentDirectoryDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StudentProfileDialog.xaml.cs">
+      <DependentUpon>StudentProfileDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StudentProfilePage.xaml.cs">
+      <DependentUpon>StudentProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAccountPasswordDialog.xaml.cs">
+      <DependentUpon>UpdateAccountPasswordDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateMasterPasswordDialog.xaml.cs">
+      <DependentUpon>UpdateMasterPasswordDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WebConfigurationDialog.xaml.cs">
+      <DependentUpon>WebConfigurationDialog.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AccountDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddAccountDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdmissionWorkspace.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChangeUserLevelDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HostConfigurationDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LogConfigurationDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AdmissionWorkspace.xaml.cs">
+      <DependentUpon>AdmissionWorkspace.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="OfficersDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OfficersProfileDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RegistrationFormPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResetDatabaseDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResetOfficerPasswordDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SchoolYearDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ServerConfigurationDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StudentDirectoryDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StudentProfileDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StudentProfilePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateAccountPasswordDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateMasterPasswordDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WebConfigurationDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\userprofiledefault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\stilipalogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\stilogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\serverconfigIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\logconfigIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\calendarIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\resetdatabaseIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\onProcessIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\exportdatatoexcelIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\hostconfigurationIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\updatemasterpasswordIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\exportpdfIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\editIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\saveIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\workspaceBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\editpasswordIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\accountIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\resetpasswordIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\edituserlevelIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\officersIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\webconfigurationIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\stifrontlineIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\mainBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Front End\sitedirectoryIC.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

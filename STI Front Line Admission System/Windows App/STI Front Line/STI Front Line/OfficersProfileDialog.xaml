@@ -1,0 +1,79 @@
+﻿<Window x:Class="STI_Front_Line.OfficersProfileDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:STI_Front_Line"
+        mc:Ignorable="d"
+        Title="OfficersProfileDialog" Height="347" Width="450"
+        MinHeight="347" MinWidth="450"
+        MaxHeight="347" MaxWidth="450"
+        WindowStyle="None"
+        Icon="Front End\stifrontlineIC.png">
+    <Border Margin="10,0,10,10">
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="hdrTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial"></TextBlock>
+                <Button Grid.Column="1" Background="Red" Width="15" Height="15" Content="x" Click="Close_Click" BorderThickness="0" RenderTransformOrigin="0.833,-0.333" FontSize="6.667" FontFamily="Arial Black" HorizontalAlignment="Center"></Button>
+            </Grid>
+            <Separator Margin="0,5,0,0"></Separator>
+            <ScrollViewer Height="272" Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" CanContentScroll="True">
+                <StackPanel Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="1" Height="70" Width="70"  Margin="0,10,0,10" Source="Front End/userprofiledefault.png"/>
+                        <Button x:Name="dtBTTNNM" Click="dtBTTNNM_Click" BorderThickness="0" Background="Transparent" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Right" Height="25" Width="25"  Margin="0,10,10,10" >
+                            <Image Source="Front End/editIC.png"/>
+                        </Button>
+                        <Button Visibility="Hidden" x:Name="svBTTNNM"  Click="svBTTNNM_Click" BorderThickness="0" Background="Transparent" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Right" Height="25" Width="25"  Margin="0,10,10,10" >
+                            <Image Source="Front End/saveIC.png"/>
+                        </Button>
+                    </Grid>
+                    <StackPanel Height="22" Orientation="Horizontal" Margin="0,1,0,1">
+                        <TextBlock Width="100" TextAlignment="Right" VerticalAlignment="Bottom" FontWeight="DemiBold">Full Name:</TextBlock>
+                        <TextBox x:Name="fllnmTXTBXNM" TextWrapping="WrapWithOverflow" Width="300" IsReadOnly="True" Margin="5,0,0,0" FontSize="15" BorderThickness="0">[value]</TextBox>
+                    </StackPanel>
+                    <StackPanel Height="22" Orientation="Horizontal" Margin="0,1,0,1">
+                        <TextBlock Width="100" TextAlignment="Right" VerticalAlignment="Bottom" FontWeight="DemiBold">Age:</TextBlock>
+                        <TextBox x:Name="gTXTBXNM" TextWrapping="WrapWithOverflow" Width="300" IsReadOnly="True" Margin="5,0,0,0" FontSize="15" BorderThickness="0">[value]</TextBox>
+                    </StackPanel>
+                    <StackPanel Height="22" Orientation="Horizontal" Margin="0,1,0,1">
+                        <TextBlock Width="100" TextAlignment="Right" VerticalAlignment="Bottom" FontWeight="DemiBold">Address:</TextBlock>
+                        <TextBox x:Name="ddrssTXTBXNM" TextWrapping="WrapWithOverflow" Width="300" IsReadOnly="True" Margin="5,0,0,0" FontSize="15" BorderThickness="0">[value]</TextBox>
+                    </StackPanel>
+                    <StackPanel Height="22" Orientation="Horizontal" Margin="0,1,0,1">
+                        <TextBlock Width="100" TextAlignment="Right" VerticalAlignment="Bottom" FontWeight="DemiBold">Contact Number:</TextBlock>
+                        <TextBox x:Name="cntctnmbrTXTBXNM" TextWrapping="WrapWithOverflow" Width="300" IsReadOnly="True" Margin="5,0,0,0" FontSize="15" BorderThickness="0">[value]</TextBox>
+                    </StackPanel>
+                    <StackPanel Height="22" Orientation="Horizontal" Margin="0,1,0,1">
+                        <TextBlock Width="100" TextAlignment="Right" VerticalAlignment="Bottom" FontWeight="DemiBold">User Name:</TextBlock>
+                        <TextBox x:Name="srnmTXTBXNM" TextWrapping="WrapWithOverflow" Width="300" IsReadOnly="True" Margin="5,0,0,0" FontSize="15" BorderThickness="0">[value]</TextBox>
+                    </StackPanel>
+                    <StackPanel Height="22" Orientation="Horizontal" Margin="0,1,0,1">
+                        <TextBlock Width="100" TextAlignment="Right" VerticalAlignment="Bottom" FontWeight="DemiBold">User Level:</TextBlock>
+                        <TextBox x:Name="srlvlTXTBXNM" TextWrapping="WrapWithOverflow" Width="280" IsReadOnly="True" Margin="5,0,0,0" FontSize="15" BorderThickness="0">[value]</TextBox>
+                        <Button x:Name="srlvlBTTNNM" Click="srlvlBTTNNM_Click" Background="Transparent" BorderThickness="0">
+                            <Image Source="Front End\edituserlevelIC.png"/>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Height="22" Orientation="Horizontal" Margin="0,1,0,1">
+                        <TextBlock Width="100" TextAlignment="Right" VerticalAlignment="Bottom" FontWeight="DemiBold">Password:</TextBlock>
+                        <TextBox x:Name="psswrdTXTBXNM" TextWrapping="WrapWithOverflow" Width="280" IsReadOnly="True" Margin="5,0,0,0" FontSize="15" BorderThickness="0">[value]</TextBox>
+                        <Button x:Name="rstpsswrdBTTNNM" Click="rstpsswrdBTTNNM_Click" Background="Transparent" BorderThickness="0">
+                            <Image Source="Front End\resetpasswordIC.png"/>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+            <Separator Margin="0,5,0,0"></Separator>
+        </StackPanel>
+    </Border>
+</Window>

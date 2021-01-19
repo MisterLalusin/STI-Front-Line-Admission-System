@@ -1,0 +1,555 @@
+﻿<Page x:Class="STI_Front_Line.RegistrationFormPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:STI_Front_Line"
+      mc:Ignorable="d" 
+      d:DesignHeight="675" d:DesignWidth="580"
+      Title="RegistrationFormPage"
+      Background="White"
+      KeyDown="Window_KeyDown">
+    <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" CanContentScroll="True">
+        <Border>
+            <StackPanel>
+                <StackPanel x:Name="rgstrtnfrmSTCKPNNL" Background="White">
+                    <StackPanel Margin="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Margin="0, 10" FontWeight="Bold" FontSize="21.333">Student Information</TextBlock>
+                            <Image x:Name="logoIMGNM"  Grid.Column="1" Width="90" Margin="0,0,10,0">
+                                <Image.Source>Front End/stilogo.png</Image.Source>
+                            </Image>
+                        </Grid>
+                        <Separator Margin="0,8,0,8" Background="#FF676E78" BorderThickness="0" Width="690" Height="1"></Separator>
+                        <TextBlock FontSize="9">This portion is filled out by the school personel.</TextBlock>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="130" />
+                                <ColumnDefinition Width="70" />
+                                <ColumnDefinition Width="95" />
+                                <ColumnDefinition Width="90" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <CheckBox x:Name="snrhghschlCHCKBXNM" Checked="snrhghschlCHCKBXNM_Checked" Grid.Column="0" VerticalAlignment="Center" FontSize="10">SENIOR HIGH SCHOOL</CheckBox>
+                            <CheckBox x:Name="cllgCHCKBXNM" Checked="cllgCHCKBXNM_Checked"  Grid.Column="1" VerticalAlignment="Center" FontSize="10">COLLEGE</CheckBox>
+                            <CheckBox x:Name="nwstdntCHCKBXNM" Checked="nwstdntCHCKBXNM_Checked"  Grid.Column="2" VerticalAlignment="Center" FontSize="10">NEW STUDENT</CheckBox>
+                            <CheckBox x:Name="trnsfrCHCKBXNM" Checked="trnsfrCHCKBXNM_Checked" Grid.Column="3" VerticalAlignment="Center" FontSize="10">TRANSFEREE</CheckBox>
+                            <StackPanel Grid.Column="4">
+                                <TextBlock FontSize="10">ID NUMBER</TextBlock>
+                                <TextBox x:Name="dnmbrTXTBXNM"></TextBox>
+                            </StackPanel>
+                        </Grid>
+                        <Separator Margin="0,8,0,8" Background="#FF676E78" BorderThickness="0" Width="690" Height="1"></Separator>
+                        <TextBlock FontSize="9" Margin="0,8,0,8">(1) For Inquires, provide the necessary information for this section only. Write in CAPITAL LETTERS. Put N/A if not applicable.</TextBlock>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Margin="0,0,10,0" FontSize="10">CHOSEN PROGRAM/ TRACK &amp; STRAND/ SPECIALIZATION</TextBlock>
+                            <TextBlock Grid.Column="1" Margin="0,0,5,0" FontSize="10">YEAR/GRADE</TextBlock>
+                            <TextBlock Grid.Column="2" Margin="5,0,0,0" FontSize="10">LRN/ESC No.</TextBlock>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="chsnprgrmtrckstrndspclztnTXTBXNM" Grid.Column="0" Margin="0,0,10,0"></TextBox>
+                            <TextBox x:Name="yrgrdTXTBXNM" Grid.Column="1" Margin="0,0,5,0"></TextBox>
+                            <TextBox x:Name="lrnscnTXTBXNM" Grid.Column="2" Margin="5,0,0,0"></TextBox>
+                        </Grid>
+                        <Separator Margin="0,8,0,8" Background="#FF676E78" BorderThickness="0" Width="690" Height="1"></Separator>
+                        <TextBlock FontSize="10" FontWeight="Bold" Margin="0,0,10,10">Student's Name</TextBlock>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="16"/>
+                                <ColumnDefinition Width="250"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0">
+                                <TextBlock FontSize="10">FIRST NAME</TextBlock>
+                                <TextBox x:Name="frstnmTXTBXNM"></TextBox>
+                                <TextBlock FontSize="10" Margin="0,8,0,0">MIDDLE NAME</TextBlock>
+                                <TextBox x:Name="mddlnmTXTBXNM"></TextBox>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="50"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock FontSize="10" Grid.Column="0" Margin="0,8,0,0">LAST NAME</TextBlock>
+                                    <TextBlock FontSize="10" Grid.Column="1" Margin="0,8,0,0">SUFFIX</TextBlock>
+                                </Grid>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="50"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox x:Name="lstnmTXTBXNM" Grid.Column="0" Margin="0,0,10,0"></TextBox>
+                                    <TextBox x:Name="sffxTXTBXNM" Grid.Column="1"></TextBox>
+                                </Grid>
+                            </StackPanel>
+                            <Border Grid.Column="1" Background="#FF676E78" Width="0.5" Height="110"></Border>
+                            <StackPanel Grid.Column="2">
+                                <TextBlock FontSize="10">DATE OF BIRTH (MM-DD-YYYY)</TextBlock>
+                                <TextBox x:Name="dtfbrthTXTBXNM"></TextBox>
+                                <Grid Margin="0,8,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" FontSize="10" Margin="0,0,5,0">BIRTHPLACE</TextBlock>
+                                    <TextBlock Grid.Column="1" FontSize="10" Margin="5,0,0,0">CITIZENSHIP</TextBlock>
+                                </Grid>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox x:Name="brtplcTXTBXNM" Grid.Column="0" Margin="0,0,5,0"></TextBox>
+                                    <TextBox x:Name="ctznshpTXTBXNM" Grid.Column="1" Margin="5,0,0,0"></TextBox>
+                                </Grid>
+                                <Grid Margin="0,8,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="85"/>
+                                        <ColumnDefinition Width="40"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" FontSize="10" Margin="0,0,5,0">CIVIL STATUS</TextBlock>
+                                    <TextBlock Grid.Column="1" FontSize="10" Margin="5,0,0,0">GENDER</TextBlock>
+                                </Grid>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="80"/>
+                                        <ColumnDefinition Width="40"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="60"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="0">
+                                            <CheckBox x:Name="snglCHCKBXNM" Checked="snglCHCKBXNM_Checked" FontSize="10">SINGLE</CheckBox>
+                                        </Grid>
+                                        <Grid Grid.Column="1">
+                                            <CheckBox x:Name="mrrdCHCKBXNM" Checked="mrrdCHCKBXNM_Checked"  FontSize="10">MARRIED</CheckBox>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="0">
+                                            <CheckBox x:Name="mCHCKBXNM" Checked="mCHCKBXNM_Checked" FontSize="10">M</CheckBox>
+                                        </Grid>
+                                        <Grid Grid.Column="1">
+                                            <CheckBox x:Name="fCHCKBXNM" Checked="fCHCKBXNM_Checked" FontSize="10">F</CheckBox>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                            </StackPanel>
+                        </Grid>
+                        <TextBlock FontSize="10" FontWeight="Bold" Margin="0,10,10,10">Current Address</TextBlock>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition Width="230"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock FontSize="10" Grid.Column="0" Margin="0,0,5,0">HOUSE/ LOT/ UNIT NO.</TextBlock>
+                            <TextBlock FontSize="10" Grid.Column="1" Margin="5,0,5,0">STREET</TextBlock>
+                            <TextBlock FontSize="10" Grid.Column="2" Margin="5,0,0,0">BUILDING/ SUBDIVISION/ VILLAGE/ BARANGAY</TextBlock>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition Width="230"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="crrntddrsshsltuntnTXTBXNM" Grid.Column="0" Margin="0,0,5,0"></TextBox>
+                            <TextBox x:Name="crrntddrssstrtTXTBXNM" Grid.Column="1" Margin="5,0,5,0"></TextBox>
+                            <TextBox x:Name="crrntddrssbldngsbdvsnbrngyTXTBXNM" Grid.Column="2" Margin="5,0,0,0"></TextBox>
+                        </Grid>
+                        <Grid Margin="0,8,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="130"/>
+                                <ColumnDefinition Width="80"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock FontSize="10" Grid.Column="0" Margin="0,0,5,0">CITY/ MUNICIPALITY</TextBlock>
+                            <TextBlock FontSize="10" Grid.Column="1" Margin="5,0,5,0">PROVINCE</TextBlock>
+                            <TextBlock FontSize="10" Grid.Column="2" Margin="5,0,0,0">ZIP CODE</TextBlock>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="130"/>
+                                <ColumnDefinition Width="80"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="crrntddrssctymncpltTXTBXNM" Grid.Column="0" Margin="0,0,5,0"></TextBox>
+                            <TextBox x:Name="crrntddrssprvncTXTBXNM" Grid.Column="1" Margin="5,0,5,0"></TextBox>
+                            <TextBox x:Name="crrntddrsszpcdTXTBXNM" Grid.Column="2" Margin="5,0,0,0"></TextBox>
+                        </Grid>
+                        <TextBlock FontSize="10" FontWeight="Bold" Margin="0,10,10,10">Permanent Address (Leave blank if same as Current Address)</TextBlock>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition Width="230"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock FontSize="10" Grid.Column="0" Margin="0,0,5,0">HOUSE/ LOT/ UNIT NO.</TextBlock>
+                            <TextBlock FontSize="10" Grid.Column="1" Margin="5,0,5,0">STREET</TextBlock>
+                            <TextBlock FontSize="10" Grid.Column="2" Margin="5,0,0,0">BUILDING/ SUBDIVISION/ VILLAGE/ BARANGAY</TextBlock>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition Width="230"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="prmnntddrsshsltuntnTXTBXNM" Grid.Column="0" Margin="0,0,5,0"></TextBox>
+                            <TextBox x:Name="prmnntddrssstrtTXTBXNM" Grid.Column="1" Margin="5,0,5,0"></TextBox>
+                            <TextBox x:Name="prmnntddrssbldngsbdvsnbrngyTXTBXNM" Grid.Column="2" Margin="5,0,0,0"></TextBox>
+                        </Grid>
+                        <Grid Margin="0,8,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="130"/>
+                                <ColumnDefinition Width="80"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock FontSize="10" Grid.Column="0" Margin="0,0,5,0">CITY/ MUNICIPALITY</TextBlock>
+                            <TextBlock FontSize="10" Grid.Column="1" Margin="5,0,5,0">PROVINCE</TextBlock>
+                            <TextBlock FontSize="10" Grid.Column="2" Margin="5,0,0,0">ZIP CODE</TextBlock>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="130"/>
+                                <ColumnDefinition Width="80"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="prmnntddrssctymncpltTXTBXNM" Grid.Column="0" Margin="0,0,5,0"></TextBox>
+                            <TextBox x:Name="prmnntddrssprvncTXTBXNM" Grid.Column="1" Margin="5,0,5,0"></TextBox>
+                            <TextBox x:Name="prmnntddrsszpcdTXTBXNM" Grid.Column="2" Margin="5,0,0,0"></TextBox>
+                        </Grid>
+                        <TextBlock FontSize="10" FontWeight="Bold" Margin="0,10,10,10">Contact Details</TextBlock>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock FontSize="10" Grid.Column="0" Margin="0,0,5,0">LANDLINE (e.g. 046 123-4567)</TextBlock>
+                            <TextBlock FontSize="10"  Grid.Column="1" Margin="5,0,5,0">MOBILE(e.g. 0917 123-4567)</TextBlock>
+                            <TextBlock FontSize="10"  Grid.Column="2" Margin="5,0,0,0">EMAIL</TextBlock>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="lndlnTXTBXNM" Grid.Column="0" Margin="0,0,5,0"></TextBox>
+                            <TextBox x:Name="mblTXTBXNM" Grid.Column="1" Margin="5,0,5,0"></TextBox>
+                            <TextBox x:Name="mlTXTBXNM" Grid.Column="2" Margin="5,0,0,0"></TextBox>
+                        </Grid>
+                        <TextBlock Padding="0,8,0,8" FontSize="9" FontWeight="Bold">Last School Attended</TextBlock>
+                        <Grid Margin="0,0,0,8">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="90"/>
+                                <ColumnDefinition Width="115"/>
+                                <ColumnDefinition Width="115"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <CheckBox x:Name="lstschlattnddhghschlCHCKBXNM" Unchecked="lstschlattnddhghschlCHCKBXNM_Unchecked" Checked="lstschlattnddhghschlCHCKBXNM_Checked" FontSize="9" Grid.Column="0" VerticalAlignment="Center">HIGH SCHOOL **</CheckBox>
+                            <CheckBox x:Name="lstschlattnddjnrhghschlCHCKBXNM" Checked="lstschlattnddjnrhghschlCHCKBXNM_Checked" FontSize="9" Grid.Column="1" VerticalAlignment="Center">JUNIOR HIGH SCHOOL</CheckBox>
+                            <CheckBox x:Name="lstschlattnddsnrhghschlCHCKBXNM" Checked="lstschlattnddsnrhghschlCHCKBXNM_Checked" FontSize="9" Grid.Column="2" VerticalAlignment="Center">SENIOR HIGH SCHOOL</CheckBox>
+                            <CheckBox x:Name="lstschlattnddllspptCHCKBXNM" Checked="lstschlattnddllspptCHCKBXNM_Checked" FontSize="9" Grid.Column="3" VerticalAlignment="Center">ALS A&amp;E / PEPT***</CheckBox>
+                            <CheckBox x:Name="lstschlattnddcllgCHCKBXNM" Checked="lstschlattnddcllgCHCKBXNM_Checked" FontSize="9" Grid.Column="4" VerticalAlignment="Center">COLLEGE</CheckBox>
+                            <StackPanel Grid.Column="5">
+                                <TextBlock FontSize="9">DATE OF GRADUATION (MM-DD-YYYY)</TextBlock>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox x:Name="lstschlattndddtfgrdtnmTXTBXNM" Grid.Column="0"></TextBox>
+                                    <TextBox x:Name="lstschlattndddtfgrdtnmmTXTBXNM" Grid.Column="1"></TextBox>
+                                    <TextBlock TextAlignment="Center" Grid.Column="2">-</TextBlock>
+                                    <TextBox x:Name="lstschlattndddtfgrdtnmmdTXTBXNM" Grid.Column="3"></TextBox>
+                                    <TextBox x:Name="lstschlattndddtfgrdtnmmddTXTBXNM" Grid.Column="4"></TextBox>
+                                    <TextBlock TextAlignment="Center" Grid.Column="5">-</TextBlock>
+                                    <TextBox x:Name="lstschlattndddtfgrdtnmmddyTXTBXNM" Grid.Column="6"></TextBox>
+                                    <TextBox x:Name="lstschlattndddtfgrdtnmmddyyTXTBXNM" Grid.Column="7"></TextBox>
+                                    <TextBox x:Name="lstschlattndddtfgrdtnmmddyyyTXTBXNM" Grid.Column="8"></TextBox>
+                                    <TextBox x:Name="lstschlattndddtfgrdtnmmddyyyyTXTBXNM" Grid.Column="9"></TextBox>
+                                </Grid>
+                            </StackPanel>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="210"/>
+                                <ColumnDefinition Width="250"/>
+                                <ColumnDefinition Width="90"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Margin="0,0,5,0" Grid.Column="0" FontSize="9">NAME OF SCHOOL</TextBlock>
+                            <TextBlock Margin="5,0,5,0" Grid.Column="1" FontSize="9">PROGRAM/ TRACK &amp; STRAND/  SPECIALIZATION</TextBlock>
+                            <TextBlock Margin="5,0,5,0" Grid.Column="2" FontSize="9">S.Y.(e.g. 2017-2018)</TextBlock>
+                            <TextBlock Margin="5,0,5,0" Grid.Column="3" FontSize="9">YEAR/ GRADE</TextBlock>
+                            <TextBlock Margin="5,0,0,0" Grid.Column="5" FontSize="9">TERM</TextBlock>
+                        </Grid>
+                        <Grid Margin="0,0,0,8">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="210"/>
+                                <ColumnDefinition Width="250"/>
+                                <ColumnDefinition Width="90"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="lstschllttnddnmfschlTXTBXNM" Grid.Column="0" Margin="0,0,5,0"></TextBox>
+                            <TextBox x:Name="lstschllttnddprgrmrtrckstrndspclztnTXTBXNM" Grid.Column="1" Margin="5,0,5,0"></TextBox>
+                            <Grid Grid.Column="2" Margin="5,0,5,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox x:Name="lstschllttnddsy1TXTBXNM" Grid.Column="0"></TextBox>
+                                <TextBlock Grid.Column="1" HorizontalAlignment="Center">-</TextBlock>
+                                <TextBox x:Name="lstschllttnddsy2TXTBXNM" Grid.Column="2"></TextBox>
+                            </Grid>
+                            <TextBox x:Name="lstschllttnddyrgrdTXTBXNM" Grid.Column="3"  Margin="5,0,5,0"></TextBox>
+                            <TextBox x:Name="lstschllttnddtrmTXTBXNM" Grid.Column="4"  Margin="5,0,0,0"></TextBox>
+                        </Grid>
+                        <TextBlock FontSize="9" Margin="0,8,0,8">(2) For Inquires, provide the necessary information for this section only. Write in CAPITAL LETTERS. Put N/A if not applicable.</TextBlock>
+                        <TextBlock FontSize="9" Margin="0,8,0,8" TextWrapping="WrapWithOverflow">Only Parents and the Designated Guardian are allowed to conduct any transaction with the school and its personnel. Please provide a valid email address for the dissemination of grades and official school communications</TextBlock>
+                        <TextBlock FontSize="9" FontWeight="Bold">Father’s Name</TextBlock>
+                        <Grid Margin="0,8,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Margin="0,0,8,0">
+                                <Grid Grid.Column="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="70"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Margin="0,0,5,0" Grid.Column="0" FontSize="9">FIRST NAME</TextBlock>
+                                    <TextBlock Margin="5,0,0,0" Grid.Column="1" FontSize="9">M.I.</TextBlock>
+                                </Grid>
+                                <Grid Grid.Column="1" Margin="0,0,0,8">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="70"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox x:Name="fthrsfrstnmTXTBXNM"  Margin="0,0,5,0" Grid.Column="0"></TextBox>
+                                    <TextBox x:Name="fthrsmddlntlTXTBXNM"  Margin="5,0,0,0" Grid.Column="1"></TextBox>
+                                </Grid>
+                                <Grid Grid.Column="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="70"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Margin="0,0,5,0" Grid.Column="0" FontSize="9">LAST NAME</TextBlock>
+                                    <TextBlock Margin="5,0,0,0" Grid.Column="1" FontSize="9">SUFFIX</TextBlock>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="70"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox x:Name="fthrslstnmTXTBXNM"  Margin="0,0,5,0" Grid.Column="0"></TextBox>
+                                    <TextBox x:Name="fthrssffxTXTBXNM"  Margin="5,0,0,0" Grid.Column="1"></TextBox>
+                                </Grid>
+                            </StackPanel>
+                            <Border Grid.Column="1" Background="#FF676E78" Width="0.5" Height="70"></Border>
+                            <StackPanel Grid.Column="2" Margin="8,0,0,0">
+                                <StackPanel>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Column="0" Margin="0,0,5,0" FontSize="9">MOBILE (e.g.  0917 123-4567)</TextBlock>
+                                        <TextBlock Grid.Column="2" Margin="5,0,0,0" FontSize="9">OCCUPATION</TextBlock>
+                                    </Grid>
+                                    <Grid Margin="0,0,0,8">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox x:Name="fthrsmblTXTBXNM"  Grid.Column="0" Margin="0,0,5,0"></TextBox>
+                                        <TextBox x:Name="fthrsccptnTXTBXNM"  Grid.Column="2" Margin="5,0,0,0"></TextBox>
+                                    </Grid>
+                                    <TextBlock FontSize="9">EMAIL</TextBlock>
+                                    <TextBox x:Name="fthrsmlTXTBXNM"></TextBox>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                        <TextBlock Margin="0,8,0,8" FontSize="9" FontWeight="Bold">Mother’s Name</TextBlock>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Margin="0,0,8,0">
+                                <Grid Grid.Column="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="70"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Margin="0,0,5,0" Grid.Column="0" FontSize="9">FIRST NAME</TextBlock>
+                                    <TextBlock Margin="5,0,0,0" Grid.Column="1" FontSize="9">M.I.</TextBlock>
+                                </Grid>
+                                <Grid Grid.Column="1" Margin="0,0,0,8">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="70"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox x:Name="mthrsfrstnmTXTBXNM"  Margin="0,0,5,0" Grid.Column="0"></TextBox>
+                                    <TextBox x:Name="mthrsmddlntlTXTBXNM"  Margin="5,0,0,0" Grid.Column="1"></TextBox>
+                                </Grid>
+                                <Grid Grid.Column="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="70"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Margin="0,0,5,0" Grid.Column="0" FontSize="9">LAST NAME</TextBlock>
+                                    <TextBlock Margin="5,0,0,0" Grid.Column="1" FontSize="9">SUFFIX</TextBlock>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="70"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox x:Name="mthrslstnmTXTBXNM"  Margin="0,0,5,0" Grid.Column="0"></TextBox>
+                                    <TextBox x:Name="mthrssffxTXTBXNM"  Margin="5,0,0,0" Grid.Column="1"></TextBox>
+                                </Grid>
+                            </StackPanel>
+                            <Border Grid.Column="1" Background="#FF676E78" Width="0.5" Height="70"></Border>
+                            <StackPanel Grid.Column="2" Margin="8,0,0,0">
+                                <StackPanel>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Column="0" Margin="0,0,5,0" FontSize="9">MOBILE (e.g.  0917 123-4567)</TextBlock>
+                                        <TextBlock Grid.Column="2" Margin="5,0,0,0" FontSize="9">OCCUPATION</TextBlock>
+                                    </Grid>
+                                    <Grid Margin="0,0,0,8">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox x:Name="mthrsmblTXTBXNM"  Grid.Column="0" Margin="0,0,5,0"></TextBox>
+                                        <TextBox x:Name="mthrsccptnTXTBXNM"  Grid.Column="2" Margin="5,0,0,0"></TextBox>
+                                    </Grid>
+                                    <TextBlock FontSize="9">EMAIL</TextBlock>
+                                    <TextBox x:Name="mthrsmlTXTBXNM"></TextBox>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                        <TextBlock Margin="0,8,0,8" FontSize="9" FontWeight="Bold">Designated Guardian</TextBlock>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Margin="0,0,8,0">
+                                <Grid Grid.Column="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="70"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Margin="0,0,5,0" Grid.Column="0" FontSize="9">FIRST NAME</TextBlock>
+                                    <TextBlock Margin="5,0,0,0" Grid.Column="1" FontSize="9">M.I.</TextBlock>
+                                </Grid>
+                                <Grid Grid.Column="1" Margin="0,0,0,8">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="70"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox x:Name="dsgntdgrdnfrstnmTXTBXNM"  Margin="0,0,5,0" Grid.Column="0"></TextBox>
+                                    <TextBox x:Name="dsgntdgrdnmddlntlTXTBXNM"  Margin="5,0,0,0" Grid.Column="1"></TextBox>
+                                </Grid>
+                                <Grid Grid.Column="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="70"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Margin="0,0,5,0" Grid.Column="0" FontSize="9">LAST NAME</TextBlock>
+                                    <TextBlock Margin="5,0,0,0" Grid.Column="1" FontSize="9">SUFFIX</TextBlock>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="70"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox x:Name="dsgntdgrdnlstnmTXTBXNM"  Margin="0,0,5,0" Grid.Column="0"></TextBox>
+                                    <TextBox x:Name="dsgntdgrdnsffxTXTBXNM"  Margin="5,0,0,0" Grid.Column="1"></TextBox>
+                                </Grid>
+                            </StackPanel>
+                            <Border Grid.Column="1" Background="#FF676E78" Width="0.5" Height="70"></Border>
+                            <StackPanel Grid.Column="2" Margin="8,0,0,0">
+                                <StackPanel>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Column="0" Margin="0,0,5,0" FontSize="9">MOBILE (e.g.  0917 123-4567)</TextBlock>
+                                        <TextBlock Grid.Column="2" Margin="5,0,0,0" FontSize="9">OCCUPATION</TextBlock>
+                                    </Grid>
+                                    <Grid Margin="0,0,0,8">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox x:Name="dsgntdgrdnmblTXTBXNM"  Grid.Column="0" Margin="0,0,5,0"></TextBox>
+                                        <TextBox x:Name="dsgntdgrdnccptnTXTBXNM"  Grid.Column="2" Margin="5,0,0,0"></TextBox>
+                                    </Grid>
+                                    <TextBlock FontSize="9">EMAIL</TextBlock>
+                                    <TextBox x:Name="dsgntdgrdnmlTXTBXNM"></TextBox>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                        <Separator Margin="0,8,0,8" Background="#FF676E78" BorderThickness="0" Width="690" Height="1"></Separator>
+                    </StackPanel>
+                </StackPanel>
+                <Grid Margin="0,0,10,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="90"/>
+                        <ColumnDefinition Width="90"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="resetBTTN" Click="resetBTTN_Click" Grid.Column="1" Margin="0,0,5,0">Reset</Button>
+                    <Button x:Name="submitBTTN" Click="submitBTTN_Click" Grid.Column="2" Margin="5,0,0,0">Submit</Button>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </ScrollViewer>
+</Page>

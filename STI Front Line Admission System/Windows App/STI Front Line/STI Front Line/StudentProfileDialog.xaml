@@ -1,0 +1,80 @@
+﻿<Window x:Class="STI_Front_Line.StudentProfileDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:STI_Front_Line"
+        mc:Ignorable="d"
+        Title="StudentProfileDialog" Height="550" Width="450"
+        MinHeight="550" MinWidth="450"
+        MaxHeight="550" MaxWidth="450"
+        WindowStyle="None"
+        Icon="Front End\stifrontlineIC.png">
+    <Border Margin="10,0,10,10">
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="hdrTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                <Button Grid.Column="1" Background="Red" Width="15" Height="15" Content="x" Click="Close_Click" BorderThickness="0" RenderTransformOrigin="0.833,-0.333" FontSize="6.667" FontFamily="Arial Black" HorizontalAlignment="Center"></Button>
+            </Grid>
+            <Separator Margin="0,5,0,0"></Separator>
+            <ScrollViewer Height="475" Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" CanContentScroll="True">
+                <StackPanel Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="80"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <TextBlock x:Name="trnsctndTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                            <TextBlock x:Name="schlllvlTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                            <TextBlock x:Name="stdntdTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                        </StackPanel>
+                        <Button x:Name="gnrtpdfBTTNNM" Click="gnrtpdfBTTNNM_Click" Height="50" BorderThickness="0" Background="Transparent" Width="50" Grid.Column="1">
+                            <Image Height="50" Source="Front End\exportpdfIC.png" Width="100"></Image>
+                        </Button>
+                    </Grid>
+                    <TextBlock x:Name="crsTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="yrrgrdTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="lrnrscTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="stdntnmTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="brthdtTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="brthplcTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="ctznshpTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="cvlsttsTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="gndrTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="crrntddrssTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="prmntddrssTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="lndlnTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="mblTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="mlTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="prvsschllvlTXTBLXKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="grdtnTXBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="lstschllttnddTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="prvslvlTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="prvsschlyrttnddTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="prvsyrrgrdTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="trmTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="fthrnmTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="fthrcntctnmbrTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="fthrccptnTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="fthrmlTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="mthrnmTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="mthrcntctnmbrTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="mthrccptnTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="mthrmlTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="grdnnmTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="grdncntctnmbrTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="grdnccptnTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="grdnmlTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="tmnddtnrlldTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                    <TextBlock x:Name="schlyrTXTBLCKNM" TextWrapping="Wrap" Margin="0,5,0,5" FontSize="12" FontFamily="arial">[value]</TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+            <Separator Margin="0,5,0,0"></Separator>
+        </StackPanel>
+    </Border>
+</Window>

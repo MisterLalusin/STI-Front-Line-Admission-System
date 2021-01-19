@@ -1,0 +1,140 @@
+﻿<Page x:Class="STI_Front_Line.SettingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:STI_Front_Line"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="SettingsPage">
+
+    <Grid Background="White">
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" CanContentScroll="True">
+            <Border Margin="10">
+                <StackPanel>
+                    <Button x:Name="hstcnfgrtnBTTN" Click="hstcnfgrtnBTTN_Click" BorderThickness="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Image Width="30" Height="30" Source="Front End/hostconfigurationIC.png"></Image>
+                            <Border Margin="10,0,10,0" Height="30" Width="1" Background="Gray"></Border>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" FontFamily="Calibri" FontSize="18">Host Configuration</TextBlock>
+                                <TextBlock x:Name="hstcnfgrtnTBNM" VerticalAlignment="Center" FontFamily="Calibri" FontSize="10">[value]</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Separator></Separator>
+                    <Button x:Name="lgcnfgrtnBTTN" Click="lgcnfgrtnBTTN_Click" BorderThickness="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Image Width="30" Height="30" Source="Front End/logconfigIC.png"></Image>
+                            <Border Margin="10,0,10,0" Height="30" Width="1" Background="Gray"></Border>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" FontFamily="Calibri" FontSize="18">Log Configuration</TextBlock>
+                                <TextBlock x:Name="lgcnfgrtnTBNM" VerticalAlignment="Center" FontFamily="Calibri" FontSize="10">[value]</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Separator></Separator>
+                    <Button x:Name="srvrcnfgrtnBTTN" Click="srvrcnfgrtnBTTN_Click" BorderThickness="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Image Width="30" Height="30" Source="Front End/serverconfigIC.png"></Image>
+                            <Border Margin="10,0,10,0" Height="30" Width="1" Background="Gray"></Border>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" FontFamily="Calibri" FontSize="18">Server Configuration</TextBlock>
+                                <TextBlock x:Name="srvrcnfgrtnTBNM" VerticalAlignment="Center" FontFamily="Calibri" FontSize="10">[value]</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Separator></Separator>
+                    <Button x:Name="wbcnfgrtnBTTN" Click="wbcnfgrtnBTTN_Click"  BorderThickness="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Image Width="30" Height="30" Source="Front End/webconfigurationIC.png"></Image>
+                            <Border Margin="10,0,10,0" Height="30" Width="1" Background="Gray"></Border>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" FontFamily="Calibri" FontSize="18">Web Configuration</TextBlock>
+                                <TextBlock x:Name="wbcnfgrtnTBNM" VerticalAlignment="Center" FontFamily="Calibri" FontSize="10">[value]</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Separator></Separator>
+                    <Button x:Name="stdrctryBTTN" Click="stdrctryBTTN_Click"  BorderThickness="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Image Width="30" Height="30" Source="Front End/sitedirectoryIC.png"></Image>
+                            <Border Margin="10,0,10,0" Height="30" Width="1" Background="Gray"></Border>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" FontFamily="Calibri" FontSize="18">Site Directory</TextBlock>
+                                <TextBlock x:Name="stdrctryTBNM" VerticalAlignment="Center" FontFamily="Calibri" FontSize="10">[value]</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Separator></Separator>
+                    <Button x:Name="schlyrBTTN" Click="schlyrBTTN_Click" BorderThickness="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Image Width="30" Height="30" Source="Front End/calendarIC.png"></Image>
+                            <Border Margin="10,0,10,0" Height="30" Width="1" Background="Gray"></Border>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" FontFamily="Calibri" FontSize="18">School Year</TextBlock>
+                                <TextBlock x:Name="schlyrTBNM" VerticalAlignment="Center" FontFamily="Calibri" FontSize="10">[value]</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Separator></Separator>
+                    <Button x:Name="ccntBTTN" Click="ccntBTTN_Click" BorderThickness="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Image Width="30" Height="30" Source="Front End/accountIC.png"></Image>
+                            <Border Margin="10,0,10,0" Height="30" Width="1" Background="Gray"></Border>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" FontFamily="Calibri" FontSize="18">Account</TextBlock>
+                                <TextBlock x:Name="ccntTBNM" VerticalAlignment="Center" FontFamily="Calibri" FontSize="10">[value]</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Separator></Separator>
+                    <Button x:Name="ffcrsBTTN" Click="ffcrsBTTN_Click" BorderThickness="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Image Width="30" Height="30" Source="Front End/officersIC.png"></Image>
+                            <Border Margin="10,0,10,0" Height="30" Width="1" Background="Gray"></Border>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" FontFamily="Calibri" FontSize="18">Officers</TextBlock>
+                                <TextBlock x:Name="ffcrsTBNM" VerticalAlignment="Center" FontFamily="Calibri" FontSize="10">[value]</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Separator></Separator>
+                    <Button x:Name="pdtmstrpsswrdBTTN" Click="pdtmstrpsswrdBTTN_Click" BorderThickness="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Image Width="30" Height="30" Source="Front End/updatemasterpasswordIC.png"></Image>
+                            <Border Margin="10,0,10,0" Height="30" Width="1" Background="Gray"></Border>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" FontFamily="Calibri" FontSize="18">Update Master Password</TextBlock>
+                                <TextBlock x:Name="pdtmstrpsswrdTBNM" VerticalAlignment="Center" FontFamily="Calibri" FontSize="10">[value]</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Separator></Separator>
+                    <Button x:Name="xprtdttxclBTTN" Click="xprtdttxclBTTN_Click" BorderThickness="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Image Width="30" Height="30" Source="Front End/exportdatatoexcelIC.png"></Image>
+                            <Border Margin="10,0,10,0" Height="30" Width="1" Background="Gray"></Border>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" FontFamily="Calibri" FontSize="18">Export Data To Excel</TextBlock>
+                                <TextBlock x:Name="xprtdttxclTBNM" VerticalAlignment="Center" FontFamily="Calibri" FontSize="10">[value]</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Separator></Separator>
+                    <Button x:Name="rstdtbsBTTN" Click="rstdtbsBTTN_Click" BorderThickness="0" HorizontalContentAlignment="Stretch" Background="Transparent">
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Image Width="30" Height="30" Source="Front End/resetdatabaseIC.png"></Image>
+                            <Border Margin="10,0,10,0" Height="30" Width="1" Background="Gray"></Border>
+                            <StackPanel>
+                                <TextBlock VerticalAlignment="Center" FontFamily="Calibri" FontSize="18">Reset Database</TextBlock>
+                                <TextBlock x:Name="rstdtbsTBNM" VerticalAlignment="Center" FontFamily="Calibri" FontSize="10">[value]</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Separator></Separator>
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
+    </Grid>
+</Page>

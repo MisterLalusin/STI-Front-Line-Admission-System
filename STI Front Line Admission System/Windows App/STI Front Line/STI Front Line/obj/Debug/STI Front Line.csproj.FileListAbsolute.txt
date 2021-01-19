@@ -1,0 +1,131 @@
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\App.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line_MarkupCompile.cache
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\STI Front Line.exe.config
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\STI Front Line.exe
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\STI Front Line.pdb
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\AdmissionWorkspace.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\MainWindow.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line_MarkupCompile.lref
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\AdmissionWorkspace.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\MainWindow.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.g.resources
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI_Front_Line.Properties.Resources.resources
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.csproj.GenerateResource.Cache
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.exe
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.pdb
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\RegistrationFormPage.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\RegistrationFormPage.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.csprojResolveAssemblyReference.cache
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\SettingsPage.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\SettingsPage.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\LogConfigurationDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\LogConfigurationDialog.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ServerConfigurationDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ServerConfigurationDialog.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\SchoolYearDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\SchoolYearDialog.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ResetDatabaseDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ResetDatabaseDialog.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.csproj.ResolveComReference.cache
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\HostConfigurationDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\HostConfigurationDialog.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\UpdateMasterPasswordDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\UpdateMasterPasswordDialog.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\StudentProfilePage.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\StudentProfilePage.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\StudentProfileDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\StudentProfileDialog.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\MigraDoc.DocumentObjectModel-WPF.dll
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\MigraDoc.Rendering-WPF.dll
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\MigraDoc.RtfRendering-WPF.dll
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\PdfSharp-WPF.dll
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\PdfSharp.Charting-WPF.dll
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\de\MigraDoc.DocumentObjectModel-WPF.resources.dll
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\de\MigraDoc.Rendering-WPF.resources.dll
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\de\MigraDoc.RtfRendering-WPF.resources.dll
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\de\PdfSharp-WPF.resources.dll
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\de\PdfSharp.Charting-WPF.resources.dll
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\AccountDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\AccountDialog.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\UpdateAccountPasswordDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\UpdateAccountPasswordDialog.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\OfficersDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\OfficersDialog.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\OfficersProfileDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\OfficersProfileDialog.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ResetOfficerPasswordDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ResetOfficerPasswordDialog.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ChangeUserLevelDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ChangeUserLevelDialog.baml
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\AddAccountDialog.g.cs
+D:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\AddAccountDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\STI Front Line.exe.config
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\STI Front Line.exe
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\STI Front Line.pdb
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\MigraDoc.DocumentObjectModel-WPF.dll
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\MigraDoc.Rendering-WPF.dll
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\MigraDoc.RtfRendering-WPF.dll
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\PdfSharp-WPF.dll
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\PdfSharp.Charting-WPF.dll
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\de\MigraDoc.DocumentObjectModel-WPF.resources.dll
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\de\MigraDoc.Rendering-WPF.resources.dll
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\de\MigraDoc.RtfRendering-WPF.resources.dll
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\de\PdfSharp-WPF.resources.dll
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\de\PdfSharp.Charting-WPF.resources.dll
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.csprojAssemblyReference.cache
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.csproj.ResolveComReference.cache
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\AccountDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\AddAccountDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\AdmissionWorkspace.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ChangeUserLevelDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\HostConfigurationDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\LogConfigurationDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\MainWindow.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\OfficersDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\OfficersProfileDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\RegistrationFormPage.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ResetDatabaseDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ResetOfficerPasswordDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\SchoolYearDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ServerConfigurationDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\SettingsPage.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\StudentProfileDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\StudentProfilePage.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\UpdateAccountPasswordDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\UpdateMasterPasswordDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\App.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line_MarkupCompile.cache
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line_MarkupCompile.lref
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\AccountDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\AddAccountDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\AdmissionWorkspace.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ChangeUserLevelDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\HostConfigurationDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\LogConfigurationDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\MainWindow.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\OfficersDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\OfficersProfileDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\RegistrationFormPage.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ResetDatabaseDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ResetOfficerPasswordDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\SchoolYearDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\ServerConfigurationDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\SettingsPage.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\StudentProfileDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\StudentProfilePage.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\UpdateAccountPasswordDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\UpdateMasterPasswordDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.g.resources
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI_Front_Line.Properties.Resources.resources
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.csproj.GenerateResource.cache
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.csproj.CoreCompileInputs.cache
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.csproj.CopyComplete
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.exe
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\STI Front Line.pdb
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\MySql.Data.dll
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\Google.Protobuf.dll
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\bin\Debug\MySql.Data.xml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\WebConfigurationDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\WebConfigurationDialog.baml
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\StudentDirectoryDialog.g.cs
+E:\Projects\Programming\Windows\STI Front Line\STI Front Line\obj\Debug\StudentDirectoryDialog.baml

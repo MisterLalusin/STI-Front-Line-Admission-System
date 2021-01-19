@@ -1,0 +1,172 @@
+body {
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/mainBG.jpg");
+  color: black;
+}
+
+.login { 
+	background-color:white;
+	width:369px;
+	height:469;
+	position:relative;
+	top:100;
+	bottom:100;
+}
+
+.login hr {
+	position:relative;
+	top:25;
+	margin-left:10;
+	margin-right:10;
+}
+
+.display { 
+	background-color:white;
+	width:369px;
+	height:469;
+	position:relative;
+	top:100;
+	bottom:100;
+}
+
+.display hr {
+	position:relative;
+	top:25;
+	margin-left:10;
+	margin-right:10;
+}
+
+.content { 
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+	background-color:white;
+	width:800px;
+	min-height:1400px;
+	padding:0px;
+	color:black;
+}
+
+.text {
+	font-size:20;
+}
+
+.graycontent {
+	top:0;
+	right:50;
+	background:lightgray;
+	padding-top:8;
+	padding-bottom:8;
+	padding-left:5;
+}
+
+.grayline {
+	background:gray;
+	padding-left:3;
+	padding-right:3;
+}
+
+#search {
+	padding-left:200;
+}
+#search button {
+	background-color:#f0f0f0;
+	border:solid black 1px;
+}
+#search input {
+	background-color:white;
+	border:solid gray 1px;
+}
+
+.sitebutton button {
+	font-size:14;
+	background:none;
+	border:none;
+}
+
+.addpaddingtodata {
+	padding-left:10;
+	padding-right:10;
+}
+
+.content input[type=submit] {
+	background-color:#f0f0f0;
+	border:solid black 1px;
+}
+
+.login input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+/*
+.showpopUp iframe {
+	background:#f0f0f0;
+	width:400;
+	height:500;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	border:none;
+}
+
+.hidepopUp iframe {
+	background:#f0f0f0;
+	width:400;
+	height:500;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	border:none;
+}
+
+.hidepopUp iframe {
+	display:none;
+}
+
+.showpopUp {
+	display:block;
+}
+
+.hidepopUp {
+	display:none;
+}*/
+
+.showitem {
+	display:block;
+}
+
+.hideitem {
+	display:none;
+}
+
+.itematstart {
+	display:none;
+}
+
+#popupIframe {
+	background:#f0f0f0;
+	width:400;
+	height:500;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	border:none;
+	padding:10;
+}

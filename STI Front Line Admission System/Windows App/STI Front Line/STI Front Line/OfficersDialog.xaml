@@ -1,0 +1,65 @@
+﻿<Window x:Class="STI_Front_Line.OfficersDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:STI_Front_Line"
+        mc:Ignorable="d"
+        Title="OfficersDialog" Height="550" Width="450"
+        MinHeight="550" MinWidth="450"
+        MaxHeight="550" MaxWidth="450"
+        WindowStyle="None"
+        Icon="Front End\stifrontlineIC.png">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Background="Red" Width="15" Height="15" Content="x" Margin="0,0,5,5" Click="Close_Click" BorderThickness="0" RenderTransformOrigin="0.833,-0.333" FontSize="6.667" FontFamily="Arial Black" HorizontalAlignment="Center"></Button>
+        </StackPanel>
+        <StackPanel Height="485" Background="LightGoldenrodYellow">
+            <Grid Margin="5,5,5,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="60"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel HorizontalAlignment="Right" Grid.Column="0" Orientation="Horizontal">
+                    <CheckBox x:Name="smlrCHCKBXNM" Margin="10,0,0,0" VerticalAlignment="Center">Similar Search</CheckBox>
+                </StackPanel>
+                <Border Width="1" Background="Wheat" Grid.Column="1"></Border>
+                <TextBox Grid.Column="2" x:Name="srchTXTBXNM"
+                Margin="0,0,10,0"
+                     Height="20"
+                     TextChanged="srchTXTBXNM_TextChanged">
+                </TextBox>
+                <Button Name="srchBTNNM"
+                    Margin="0,0,10,0"
+                    Content="Search"
+                    Grid.Column="3"
+                    Height="20"
+                    FontSize="13"
+                    Click="srchBTNNM_Click"/>
+            </Grid>
+            <DataGrid Name="dtgrdNM"
+                  BorderThickness="0,1,0,0"
+                  Background="White"
+                      Height="455"
+                      Width="703"
+                      AutoGenerateColumns="False"
+                      HorizontalAlignment="Left"
+                      ItemsSource="{Binding DTV}"
+                      CanUserResizeRows="False"
+                      CanUserAddRows="False"
+                      MouseDoubleClick="dtgrdNM_MouseDoubleClick">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="" Binding="{Binding Path=UserID}" IsReadOnly="True" MinWidth="50" MaxWidth="0"/>
+                    <DataGridTextColumn Header="Admission Officer" Binding="{Binding Path=FullName}" IsReadOnly="True" MinWidth="350" MaxWidth="350"/>
+                    <DataGridTextColumn Header="User Level" Binding="{Binding Path=UserLevel}" IsReadOnly="True" MinWidth="110" MaxWidth="110"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right">
+            <Button x:Name="ddccnt" Click="ddccnt_Click" Margin="5">Add Account</Button>
+        </StackPanel>
+        
+    </StackPanel>
+</Window>
